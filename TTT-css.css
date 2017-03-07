@@ -1,0 +1,113 @@
+* {
+  color: white;
+  user-select: none;
+}
+body {
+  background-color: black;
+}
+h1 {
+  float: left;
+}
+
+#inner-container {
+  margin-top: 100px;
+  opacity: 0;
+  @keyframes fade {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#main-container {
+  width: 250px;
+}
+.tic {
+  background: rgba(200, 200, 200, 0.8);
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 10px;
+  font-size: 50px;
+  padding-left: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#startup-menu {
+  position: absolute;
+  left: 40.5%;
+  top: 125px;
+  color: blue;
+  width: 250px;
+  height: 150px;
+  background-color: rgba(150, 150, 150, 0.2);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(230, 0, 0, 0.2), inset 0px 0px 25px rgba(0, 0, 179, 0.2);
+  animation: start 3s;
+  @keyframes start {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#choose-x {
+  float:left;
+  margin-top: 15%;
+  margin-left: 20%;
+  font-size: 65px;
+  cursor: pointer;
+  color: rgba(230, 0, 0, 0.9);
+  opacity: 0.5;
+}
+#choose-x:hover {
+  text-shadow: 0px 0px 10px rgba(230, 0, 0, 0.9);
+  animation: in 1s;
+  @keyframes in {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#choose-o {
+  float: left;
+  margin-top: 15%;
+  margin-left: 23%;
+  font-size: 65px;
+  cursor: pointer;
+  color: rgba(0, 0, 179, 0.7);
+  opacity: 0.5;
+}
+#choose-o:hover {
+  text-shadow: 0px 0px 9px rgba(0, 0, 179, 1);
+  animation: in 1s;
+  @keyframes in {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#reset {
+  position: absolute;
+  top: 300px;
+  right: 810px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  color: rgba(77, 0, 77, 1);
+  box-shadow: 0px 0px 40px rgba(77, 0, 77, 1);
+  border-radius: 10px;
+}
